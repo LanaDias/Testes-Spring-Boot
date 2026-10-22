@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TesteApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(TesteApplication.class, args);
+		SpringApplication.run(TesteApplication.class, args); //inicia a aplicação Spring Boot, que por sua vez inicia o servidor Tomcat e disponibiliza a aplicação na porta 8080.
 	}
 
 }
