@@ -34,9 +34,3 @@ Dentro da pasta `Task`:
 .\gradlew clean test      # Windows (PowerShell)
 ./gradlew clean test      # Linux / macOS
 ```
-
-O relatório de cobertura fica em:
-
-```
-Task/build/reports/jacoco/test/html/index.html
-```
