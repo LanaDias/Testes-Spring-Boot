@@ -34,3 +34,7 @@ Dentro da pasta `Task`:
 .\gradlew clean test      # Windows (PowerShell)
 ./gradlew clean test      # Linux / macOS
 ```
+
+## Referência
+https://spring.io/guides/gs/accessing-data-jpa
+
