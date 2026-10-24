@@ -35,8 +35,6 @@ Dentro da pasta `Task`:
 ./gradlew clean test      # Linux / macOS
 ```
 
-O relatório de cobertura fica em:
+## Referência
+https://spring.io/guides/gs/accessing-data-jpa
 
-```
-Task/build/reports/jacoco/test/html/index.html
-```

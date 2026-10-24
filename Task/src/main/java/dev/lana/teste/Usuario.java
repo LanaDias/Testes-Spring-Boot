@@ -1,17 +1,18 @@
 package dev.lana.teste;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
+import jakarta.persistence.Entity; //importa a anotação @Entity do JPA, que indica que essa classe é uma entidade do banco de dados.
+import jakarta.persistence.GeneratedValue; //importa a notação @GeneratedValue do JPA, que indica que o valor do campo será gerado automaticamente pelo banco de dados.
+import jakarta.persistence.GenerationType;//importa a anotação @GenerationType do JPA, que indica o tipo de geração do valor do campo.
+import jakarta.persistence.Id; //importa a anotação @Id do JPA, que indica que o campo é a chave primária da tabela.
 
-//avisa ao JPA queessa classe vira uma tabela, onde cada objeto vira uma linha da tabela e cada campo é uma coluna da tabela.
+
 @Entity 
 
 public class Usuario {
 
-    @Id //id gerado pelo banco
-    @GeneratedValue (strategy= GenerationType.IDENTITY) //banco gera o id automaticamente, não precisa informar.
+    //As anotações jpa se aplicam á proxima declaração que está logo abaixo, que é o campo id.
+    @Id //indica que o campo id é a chave primária da tabela.
+    @GeneratedValue (strategy= GenerationType.IDENTITY) //banco gera o id automaticamente.
     private Long id; //id do usuário, gerado pelo banco
 
     private String nome;
@@ -23,8 +24,7 @@ public class Usuario {
         this.nome = nome;
     }
 
-    public Long getId() { return id; } //retorna o id do usuário
-    public String getNome() { return nome; } //retorna o nome do usuário
+    public Long getId() { return id; } //pega o id do banco de dados e retorna 
+    public String getNome() { return nome; } //pega o nome do banco de dados e retorna
 
-    
 }

@@ -26,13 +26,13 @@ public class UsuarioServiceTest {
     void deveRejeitarNomeNulo() {
         // Executa a ação e valida se a exceção correta é lançada
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
-            service.cadastrar(""); // Substitua pelo método real do seu service (ex: cadastrar, criar)
+            service.cadastrar(""); 
         });
 
-        // Valida se a mensagem da exceção está correta (opcional)
+        
         assertEquals("Nome Obrigatório", exception.getMessage());
 
-        // Garante que o repositório nunca foi chamado para salvar um usuário inválido
+        
         verify(repository, never()).save(any());
     }    
 }
