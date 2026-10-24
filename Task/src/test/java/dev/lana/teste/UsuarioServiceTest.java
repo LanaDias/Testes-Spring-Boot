@@ -26,7 +26,7 @@ public class UsuarioServiceTest {
     void deveRejeitarNomeNulo() {
         // Executa a ação e valida se a exceção correta é lançada
         IllegalArgumentException exception = assertThrows(IllegalArgumentException.class, () -> {
-            service.cadastrar(null); // Substitua pelo método real do seu service (ex: cadastrar, criar)
+            service.cadastrar(""); // Substitua pelo método real do seu service (ex: cadastrar, criar)
         });
 
         // Valida se a mensagem da exceção está correta (opcional)
